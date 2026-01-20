@@ -77,7 +77,7 @@ const App = () => {
                                         : ""
                                 }
                             >
-                                Tecnología
+                                Tecnologías
                             </a>
                         </li>
                         <li>
@@ -89,7 +89,7 @@ const App = () => {
                                         : ""
                                 }
                             >
-                                Experiencia
+                                Experiencias
                             </a>
                         </li>
                         <li>
@@ -170,7 +170,7 @@ const App = () => {
                     </p>
                 </section>
                 <section id="technologies" className="section">
-                    <h2>Tecnología</h2>
+                    <h2>Tecnologías</h2>
                     <div className="technologies-grid">
                         <a
                             href="https://nodejs.org/"
@@ -384,7 +384,7 @@ const App = () => {
                     </div>
                 </section>
                 <section id="experience" className="section">
-                    <h2>Experiencia</h2>
+                    <h2>Experiencias</h2>
                     <div className="experience-item">
                         <div className="date">Oct. 2025 – Dic. 2025</div>
                         <div className="details">
