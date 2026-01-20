@@ -23,7 +23,7 @@ RUN chown -R nginx:nginx /usr/share/nginx/html && \
 COPY env.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
 
-EXPOSE 3000
+EXPOSE 4002
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
