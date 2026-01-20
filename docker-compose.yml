@@ -11,14 +11,13 @@ services:
         networks:
             - portfolio-network
 
-    cloudflared:
+    cloudflared-portfolio:
         image: cloudflare/cloudflared:latest
         restart: unless-stopped
         environment:
             TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN}
         networks:
             - portfolio-network
-            - default
         command:
             - tunnel
             - --no-autoupdate
