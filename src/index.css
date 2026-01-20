@@ -234,59 +234,8 @@ body {
 
 /* Responsive Design */
 
-/* Tablet */
-@media (max-width: 1024px) {
-    .app {
-        max-width: none;
-    }
-
-    .left-column {
-        width: 300px;
-    }
-
-    .right-column {
-        width: calc(100vw - 300px);
-        left: 300px;
-    }
-
-    .index {
-        display: none;
-    }
-
-    .name {
-        font-size: 2.2rem;
-    }
-
-    .title {
-        font-size: 1.4rem;
-    }
-
-    .tagline {
-        font-size: 1.1rem;
-        margin-bottom: 150px;
-    }
-
-    .technologies-grid {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        gap: 15px;
-    }
-
-    .tech-item {
-        padding: 12px;
-    }
-
-    .tech-icon {
-        width: 35px;
-        height: 35px;
-    }
-
-    .tech-item span {
-        font-size: 0.8rem;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
+/* Mobile and Tablet */
+@media (max-width: 1200px) {
     .left-column {
         position: static;
         width: 100%;
@@ -307,10 +256,7 @@ body {
     .app {
         display: flex;
         flex-direction: column;
-    }
-
-    .index {
-        display: none;
+        max-width: none;
     }
 
     .name {
@@ -327,7 +273,7 @@ body {
     }
 
     .index {
-        margin-bottom: 30px;
+        display: none;
     }
 
     .social-icons {
@@ -374,7 +320,6 @@ body {
         order: 3;
         width: 100%;
         max-width: 200px;
-        max-height: 100px;
     }
 
     .experience-item {
@@ -387,6 +332,10 @@ body {
     }
 
     .project-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .experience-item h3 {
         font-size: 1.2rem;
     }
 }
