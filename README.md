@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# Portfolio Personal - Desarrollador Full-Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un portfolio moderno y responsivo construido con React y Vite, diseñado para mostrar mis habilidades, experiencia y proyectos como desarrollador full-stack.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Diseño Responsivo**: Optimizado para desktop, tablet y móviles
+- **Navegación Suave**: Scroll detection con actualización automática del índice activo
+- **Animaciones Sutiles**: Transiciones y hover effects para una experiencia interactiva
+- **Tecnologías Interactivas**: Íconos clicables que redirigen a las páginas oficiales
+- **Secciones Organizadas**:
+    - Sobre mí
+    - Tecnologías
+    - Experiencia Profesional
+    - Proyectos
 
-## React Compiler
+## 🛠️ Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+- **React** - Framework para la construcción de interfaces de usuario
+- **TypeScript** - Tipado estático para JavaScript
+- **Vite** - Herramienta de build rápida para desarrollo moderno
+- **CSS3** - Estilos con animaciones y diseño responsivo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Librerías y Herramientas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Intersection Observer API** - Para detección de secciones visibles
+- **Simple Icons** - Íconos oficiales de tecnologías
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🏗️ Estructura del Proyecto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+portfolio/
+├── public/
+│   ├── favicon.ico
+│   ├── gym-project.png
+│   └── portfolio-project.png
+├── src/
+│   ├── App.tsx          # Componente principal
+│   ├── index.css        # Estilos globales y responsivos
+│   ├── main.tsx         # Punto de entrada
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Diseño y UX
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Layout de Dos Columnas**: Navegación fija a la izquierda, contenido scrollable a la derecha
+- **Paleta de Colores**: Esquema sobrio con acentos sutiles
+- **Tipografía**: Arial para legibilidad
+- **Responsive Design**:
+    - Desktop: Layout original
+    - Tablet: Columnas ajustadas, índice oculto
+    - Móvil: Layout de una columna, elementos apilados verticalmente
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📄 Licencia y Restricciones de Uso
+
+**Copyright © 2026 José Núñez. Todos los derechos reservados.**
+
+### ⚖️ Términos de Uso
+
+Este proyecto es de **propiedad intelectual exclusiva** de José Núñez.
+
+#### ✅ Permitido
+
+- **Visualización del código** con fines educativos y de aprendizaje
+- **Revisión técnica** para comprender implementaciones y patrones
+
+#### ❌ Prohibido
+
+- **Copiar**, clonar o replicar el código (parcial o totalmente)
+- **Modificar** o crear trabajos derivados
+- **Redistribuir** o publicar en otros repositorios
+- **Uso comercial** de cualquier tipo
+- **Apropiación** de ideas, implementaciones o diseños específicos
+
+#### 📜 Licencia
+
+Este software se distribuye bajo una licencia restrictiva personalizada. El código fuente está disponible solo para inspección y aprendizaje. Cualquier otro uso requiere autorización explícita y por escrito del propietario.
+
+**All Rights Reserved**
+
+---
+
+## 👨‍💻 Autor
+
+**José Núñez**  
+Desarrollador Fullstack
