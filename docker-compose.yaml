@@ -1,0 +1,33 @@
+Version: "3.8"
+
+services:
+    frontend:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: unless-stopped
+        ports:
+            - "4002:4002"
+        networks:
+            - portfolio-network
+
+    cloudflared:
+        image: cloudflare/cloudflared:latest
+        restart: unless-stopped
+        environment:
+            TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN}
+        networks:
+            - portfolio-network
+        command:
+            - tunnel
+            - --no-autoupdate
+            - run
+        depends_on:
+            - frontend
+
+networks:
+    portfolio-network:
+        driver: bridge
+    default:
+        name: dokploy-network
+        external: true
