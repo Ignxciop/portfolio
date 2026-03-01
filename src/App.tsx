@@ -530,6 +530,54 @@ const App = () => {
                             </p>
                         </div>
                     </div>
+                    <div
+                        className="project-item"
+                        onClick={() =>
+                            window.open(
+                                "https://https://fintrack.josenunez.cl/",
+                                "_blank",
+                            )
+                        }
+                    >
+                        <img src="/fintrack.png" alt="Proyecto Fintrack" />
+                        <div className="project-details">
+                            <h3>Fintrack</h3>
+                            <p>
+                                Aplicación web de finanzas personales orientada
+                                al control total y la automatización de ingresos
+                                y gastos. Permite gestionar múltiples cuentas,
+                                registrar movimientos (ingresos, gastos, ajustes
+                                y transferencias), configurar transacciones
+                                recurrentes y crear presupuestos personalizados.
+                                Ofrece una visión clara del estado financiero
+                                del usuario, facilitando la planificación y la
+                                toma de decisiones basadas en datos.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        className="project-item"
+                        onClick={() =>
+                            window.open("https://tasks.josenunez.cl/", "_blank")
+                        }
+                    >
+                        <img src="/enfok.png" alt="Proyecto Enfok" />
+                        <div className="project-details">
+                            <h3>Enfok</h3>
+                            <p>
+                                Aplicación web enfocada en la gestión
+                                inteligente de tareas y productividad personal.
+                                Permite organizar actividades por prioridad y
+                                fecha, visualizar la carga diaria mediante un
+                                calendario interactivo y analizar el estado
+                                general del trabajo pendiente. Incluye métricas
+                                en tiempo real sobre tareas atrasadas, progreso
+                                diario y distribución de responsabilidades,
+                                ofreciendo una visión clara y estratégica del
+                                flujo de trabajo.
+                            </p>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
