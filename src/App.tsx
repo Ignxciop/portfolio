@@ -464,6 +464,24 @@ const App = () => {
                     <div
                         className="project-item"
                         onClick={() =>
+                            window.open("https://josenunez.cl/", "_blank")
+                        }
+                    >
+                        <img src="/portfolio-project.png" alt="Portfolio" />
+                        <div className="project-details">
+                            <h3>Portfolio</h3>
+                            <p>
+                                Mi portfolio personal, desarrollado con React y
+                                CSS. Presenta mis habilidades, experiencia y
+                                proyectos de manera clara y atractiva,
+                                destacando mi enfoque en el desarrollo web
+                                moderno y responsivo.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        className="project-item"
+                        onClick={() =>
                             window.open(
                                 "https://gimnasio.josenunez.cl/",
                                 "_blank",
@@ -486,18 +504,29 @@ const App = () => {
                     <div
                         className="project-item"
                         onClick={() =>
-                            window.open("https://josenunez.cl/", "_blank")
+                            window.open(
+                                "https://mangalovers.josenunez.cl/",
+                                "_blank",
+                            )
                         }
                     >
-                        <img src="/portfolio-project.png" alt="Portfolio" />
+                        <img
+                            src="/mangalovers.png"
+                            alt="Proyecto Mangalovers"
+                        />
                         <div className="project-details">
-                            <h3>Portfolio</h3>
+                            <h3>Mangalovers</h3>
                             <p>
-                                Mi portfolio personal, desarrollado con React y
-                                CSS. Presenta mis habilidades, experiencia y
-                                proyectos de manera clara y atractiva,
-                                destacando mi enfoque en el desarrollo web
-                                moderno y responsivo.
+                                Aplicación web progresiva (PWA) para la lectura
+                                y gestión de mangas, enfocada en una experiencia
+                                rápida, intuitiva y optimizada para dispositivos
+                                móviles. Permite explorar títulos, gestionar el
+                                progreso de lectura por capítulos, marcar
+                                estados de seguimiento y compartir mangas
+                                fácilmente. Desarrollada con React en el
+                                frontend y Node.js con Express en el backend,
+                                prioriza rendimiento, usabilidad y una
+                                experiencia similar a una app nativa.
                             </p>
                         </div>
                     </div>
