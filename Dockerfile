@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pnpm install --no-frozen-lockfile
+RUN rm -f pnpm-lock.yaml && pnpm install
 
 RUN pnpm run build
 
